@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Open+Sans:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/theme.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -50,14 +51,18 @@
         </ul>
       </nav>
       <a class="lang-switch" href="en/" lang="en" hreflang="en">English</a>
+      <button class="theme-toggle" type="button" aria-label="ダークモードに切り替え" title="ダークモードに切り替え">☾</button>
     </div>
   </header>
 
   <main id="main">
     <section class="hero">
-      <div class="container hero-inner">
+      <div class="container">
         <div>
-          <p class="brand-display">Kano Lab</p>
+          <div class="brand-row">
+            <p class="brand-display">Kano Lab</p>
+            <img class="brand-mascot" src="assets/img/mascot.png" alt="" width="181" height="202">
+          </div>
           <div class="bar"></div>
           <p class="subtitle">滋賀大学教育学部 加納研究室｜科学コミュニケーション</p>
           <h1 style="margin-top:1.5rem">科学・教育・社会・政策をつなぎ、<br>誰もが科学と未来をつくれる社会へ。</h1>
@@ -67,7 +72,6 @@
           <a class="btn secondary" href="unesco-chair/">ユネスコチェアを見る</a>
         </div>
         </div>
-        <img class="hero-mascot" src="assets/img/mascot.png" alt="" width="181" height="202">
       </div>
     </section>
 

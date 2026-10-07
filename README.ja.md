@@ -40,3 +40,4 @@ python3 -m http.server 8000
 
 - デザインは現行の Google Sites（https://sites.google.com/site/keikanolab/）を踏襲し、配色はマニュアルの指定（柿渋色・墨色・深緑・白）を優先。ロゴ、マスコット、ゲーム・書籍・チラシの画像、動画は現行サイトから再利用（`assets/img/`）。
 - フォント：Oswald と Open Sans を Google Fonts から読み込み。
+- ライト／ダークテーマ：既定は OS の設定に従い、ヘッダーのボタンで切り替え（選択はブラウザに保存、`assets/theme.js`）。
