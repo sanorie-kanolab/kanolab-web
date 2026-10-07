@@ -32,6 +32,10 @@ python3 -m http.server 8000
 # open http://localhost:8000/
 ```
 
+## SEO and AI discoverability
+
+`python3 -I tools/add_seo.py` inserts canonical / hreflang / Open Graph / JSON-LD into every page (between `<!-- seo:start -->` and `<!-- seo:end -->`) and regenerates `sitemap.xml` and `robots.txt`. It is idempotent. If the public URL changes, edit `BASE` in the script and run it again (also update `llms.txt`). Re-run it after changing a page's title, description or update date.
+
 ## Status
 
 - Done: all 26 pages (ja / en), text and links taken from the manual.

@@ -1,0 +1,21 @@
+# Kano Lab (加納研究室)
+
+> The Science Communication Laboratory at the Faculty of Education, Shiga University, Japan. Led by Professor Kei Kano (加納 圭). Three research areas: inclusive science communication and STEAM education; traditional and Indigenous knowledge for a sustainable society; responsible AI in education.
+
+Japanese pages are at the site root; English pages are under /en/ with the same paths.
+
+## Main pages
+- [Home](https://sanorie-kanolab.github.io/kanolab-web/en/): lab overview
+- [Research](https://sanorie-kanolab.github.io/kanolab-web/en/research/): the three research areas and past projects
+- [UNESCO Chair](https://sanorie-kanolab.github.io/kanolab-web/en/unesco-chair/): UNESCO Chair on STEAM education weaving traditional cultural resources and science
+- [Workshops](https://sanorie-kanolab.github.io/kanolab-web/en/workshops/): STEAM workshops for children, families and the public
+- [Games & Books](https://sanorie-kanolab.github.io/kanolab-web/en/games-books/): game-based teaching materials and books
+- [People](https://sanorie-kanolab.github.io/kanolab-web/en/people/): members
+- [Join the Lab](https://sanorie-kanolab.github.io/kanolab-web/en/join/): doctoral, JSPS fellow, visiting and collaborative research
+- [Contact](https://sanorie-kanolab.github.io/kanolab-web/en/contact/)
+- [Access](https://sanorie-kanolab.github.io/kanolab-web/en/access/)
+
+## Japanese
+- [ホーム](https://sanorie-kanolab.github.io/kanolab-web/): 研究室の公式概要
+- [研究](https://sanorie-kanolab.github.io/kanolab-web/research/)
+- [ユネスコチェア](https://sanorie-kanolab.github.io/kanolab-web/unesco-chair/)
