@@ -242,3 +242,68 @@ a:hover { color: var(--accent-dark); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* サブページ */
+.breadcrumb {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  padding: 0.45rem 0;
+}
+.breadcrumb a { color: var(--ink-soft); }
+.hero-sub { padding: clamp(2rem, 5vw, 3.5rem) 0; }
+.hero-sub h1 { font-size: clamp(1.45rem, 3.6vw, 2.2rem); }
+.eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 700;
+}
+.lead + .lead { margin-top: 0.75rem; }
+
+.section h3 { margin: 1.5rem 0 0.5rem; font-size: 1.1rem; line-height: 1.55; }
+.section ul { margin: 0 0 1rem; padding-left: 1.4rem; max-width: 52rem; }
+.section li { margin: 0.25rem 0; }
+.card ul { padding-left: 1.2rem; font-size: 0.95rem; color: var(--ink-soft); }
+.card .btn-row { margin-top: auto; padding-top: 0.5rem; }
+.section .btn-row { margin: 1rem 0 0; }
+
+/* 準備中のボタン */
+.btn.disabled {
+  background: transparent;
+  color: var(--ink-soft);
+  border: 1px dashed var(--ink-soft);
+  cursor: not-allowed;
+}
+
+/* 公開前に確定が必要な箇所（プレースホルダー） */
+mark.todo {
+  background: #fff1b8;
+  color: #5a4300;
+  padding: 0 0.2em;
+  border-radius: 3px;
+}
+@media (prefers-color-scheme: dark) {
+  mark.todo { background: #5a4a14; color: #ffe9a3; }
+}
+
+/* 長い URL・語句のはみ出し防止 */
+.section p, .section li, .card, .site-footer { overflow-wrap: anywhere; }
+
+/* イベント情報などの項目リスト */
+dl.facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 1rem;
+  margin: 0 0 1rem;
+  max-width: 52rem;
+}
+dl.facts > div { display: contents; }
+dl.facts dt { font-weight: 700; }
+dl.facts dd { margin: 0; }
+@media (max-width: 40rem) {
+  dl.facts { grid-template-columns: 1fr; }
+  dl.facts dt { margin-top: 0.4rem; }
+}
