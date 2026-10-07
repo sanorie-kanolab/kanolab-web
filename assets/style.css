@@ -9,6 +9,8 @@
   --ink-soft: #5c544d;
   --accent: #9a4a2f;      /* 柿渋色の赤褐色 */
   --accent-dark: #7a3720;
+  --on-accent: #ffffff;
+  --plate: transparent;   /* ロゴ・マスコットの台座 */
   --accent-line: #d9b3a3; /* 区切り線用の淡い柿渋 */
   --green: #2f5d4a;       /* 深緑（少量） */
   --line: #e6ded6;
@@ -27,13 +29,15 @@
     --bg: #1d1a17;
     --surface: #26221f;
     --tint: #2a2420;
-    --ink: #f1ebe0;
-    --ink-soft: #b8afa3;
-    --accent: #d98a68;
-    --accent-dark: #e8a78a;
-    --accent-line: #5a4338;
-    --green: #7fb59d;
-    --line: #3a342e;
+    --ink: #f7f2ea;
+    --ink-soft: #d2c9bd;
+    --accent: #eba283;
+    --accent-dark: #f5bda3;
+    --on-accent: #1d1a17;
+    --plate: #f7f2ea;
+    --accent-line: #6b5043;
+    --green: #8fc7ae;
+    --line: #4a413a;
     --todo-bg: #5a4a14;
     --todo-ink: #ffe9a3;
     color-scheme: dark;
@@ -43,13 +47,15 @@
   --bg: #1d1a17;
   --surface: #26221f;
   --tint: #2a2420;
-  --ink: #f1ebe0;
-  --ink-soft: #b8afa3;
-  --accent: #d98a68;
-  --accent-dark: #e8a78a;
-  --accent-line: #5a4338;
-  --green: #7fb59d;
-  --line: #3a342e;
+  --ink: #f7f2ea;
+  --ink-soft: #d2c9bd;
+  --accent: #eba283;
+  --accent-dark: #f5bda3;
+  --on-accent: #1d1a17;
+  --plate: #f7f2ea;
+  --accent-line: #6b5043;
+  --green: #8fc7ae;
+  --line: #4a413a;
   --todo-bg: #5a4a14;
   --todo-ink: #ffe9a3;
   color-scheme: dark;
@@ -78,7 +84,7 @@ a:hover { color: var(--accent-dark); }
   left: -999px;
   top: 0;
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
   padding: 0.5rem 1rem;
   z-index: 100;
 }
@@ -152,7 +158,7 @@ a:hover { color: var(--accent-dark); }
   text-decoration: none;
   white-space: nowrap;
 }
-.lang-switch:hover { background: var(--accent); color: #fff; }
+.lang-switch:hover { background: var(--accent); color: var(--on-accent); }
 
 /* ライト／ダーク切り替えボタン */
 .theme-toggle {
@@ -167,7 +173,7 @@ a:hover { color: var(--accent-dark); }
   cursor: pointer;
   white-space: nowrap;
 }
-.theme-toggle:hover { background: var(--accent); color: #fff; }
+.theme-toggle:hover { background: var(--accent); color: var(--on-accent); }
 .theme-toggle[hidden] { display: none; }
 
 /* ヒーロー（大見出し＋太いアクセント帯＋マスコット） */
@@ -218,6 +224,21 @@ a:hover { color: var(--accent-dark); }
   font-weight: 700;
 }
 .subtitle { margin: 0; color: var(--ink-soft); }
+
+/* トップページ：タイトル＋マスコット */
+.brand-row {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.75rem, 3vw, 1.75rem);
+}
+.brand-mascot { width: clamp(64px, 11vw, 110px); height: auto; flex: none; }
+
+/* マスコット：ダークでも読めるよう台座を敷く */
+.hero-mascot, .brand-mascot {
+  background: var(--plate);
+  border-radius: 14px;
+  padding: 6px;
+}
 
 /* セクション */
 .section { padding: clamp(1.75rem, 4vw, 3rem) 0; }
@@ -330,16 +351,16 @@ figure.media figcaption {
   display: inline-block;
   padding: 0.5rem 1.25rem;
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
   border: 1px solid var(--accent);
   border-radius: var(--radius);
   text-decoration: none;
   font-size: 0.92rem;
   line-height: 1.5;
 }
-.btn:hover { background: var(--accent-dark); border-color: var(--accent-dark); color: #fff; }
+.btn:hover { background: var(--accent-dark); border-color: var(--accent-dark); color: var(--on-accent); }
 .btn.secondary { background: transparent; color: var(--accent); }
-.btn.secondary:hover { background: var(--accent); color: #fff; }
+.btn.secondary:hover { background: var(--accent); color: var(--on-accent); }
 .btn-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; }
 .section .btn-row { margin: 1rem 0 0; }
 
