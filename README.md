@@ -40,4 +40,3 @@ python3 -m http.server 8000
 
 - Design follows the previous Google Sites site (https://sites.google.com/site/keikanolab/) with the colour scheme specified in the manual (persimmon-tannin red-brown, ink, deep green, white). Logo, mascot, game/book/flyer images and videos are reused from that site (`assets/img/`).
 - Fonts: Oswald and Open Sans are loaded from Google Fonts.
-- Light/dark theme: follows the OS setting by default; the header button switches it and the choice is saved in the browser (`assets/theme.js`).
