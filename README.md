@@ -37,3 +37,6 @@ python3 -m http.server 8000
 - Done: all 26 pages (ja / en), text and links taken from the manual.
 - Items still to be confirmed before they are final are highlighted in yellow (`<mark class="todo">`): enquiry/registration form URLs (shown as disabled "coming soon" buttons), workshop event details, member names, UNESCO Chair dates. Search with `grep -rl 'class="todo"' .`
 - Images (hero and cards) are not added yet because no photos have been supplied.
+
+- Design follows the previous Google Sites site (https://sites.google.com/site/keikanolab/) with the colour scheme specified in the manual (persimmon-tannin red-brown, ink, deep green, white). Logo, mascot, game/book/flyer images and videos are reused from that site (`assets/img/`).
+- Fonts: Oswald and Open Sans are loaded from Google Fonts.
