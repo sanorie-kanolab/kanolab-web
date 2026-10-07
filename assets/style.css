@@ -10,7 +10,6 @@
   --accent: #9a4a2f;      /* 柿渋色の赤褐色 */
   --accent-dark: #7a3720;
   --on-accent: #ffffff;
-  --plate: transparent;   /* ロゴ・マスコットの台座 */
   --accent-line: #d9b3a3; /* 区切り線用の淡い柿渋 */
   --green: #2f5d4a;       /* 深緑（少量） */
   --line: #e6ded6;
@@ -21,44 +20,6 @@
   --max-width: 1080px;
   --font-display: "Oswald", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
   --font-body: "Open Sans", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", system-ui, sans-serif;
-}
-
-/* ダークテーマ：OS設定に従い、data-theme で手動指定したものを優先する */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #1d1a17;
-    --surface: #26221f;
-    --tint: #2a2420;
-    --ink: #f7f2ea;
-    --ink-soft: #d2c9bd;
-    --accent: #eba283;
-    --accent-dark: #f5bda3;
-    --on-accent: #1d1a17;
-    --plate: #f7f2ea;
-    --accent-line: #6b5043;
-    --green: #8fc7ae;
-    --line: #4a413a;
-    --todo-bg: #5a4a14;
-    --todo-ink: #ffe9a3;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #1d1a17;
-  --surface: #26221f;
-  --tint: #2a2420;
-  --ink: #f7f2ea;
-  --ink-soft: #d2c9bd;
-  --accent: #eba283;
-  --accent-dark: #f5bda3;
-  --on-accent: #1d1a17;
-  --plate: #f7f2ea;
-  --accent-line: #6b5043;
-  --green: #8fc7ae;
-  --line: #4a413a;
-  --todo-bg: #5a4a14;
-  --todo-ink: #ffe9a3;
-  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -127,7 +88,6 @@ a:hover { color: var(--accent-dark); }
 }
 .site-brand { order: 1; }
 .lang-switch { order: 2; margin-left: auto; }
-.theme-toggle { order: 2; }
 .site-nav { order: 3; flex: 1 1 100%; }
 .site-nav ul {
   list-style: none;
@@ -159,22 +119,6 @@ a:hover { color: var(--accent-dark); }
   white-space: nowrap;
 }
 .lang-switch:hover { background: var(--accent); color: var(--on-accent); }
-
-/* ライト／ダーク切り替えボタン */
-.theme-toggle {
-  font: inherit;
-  font-size: 0.85rem;
-  line-height: 1.5;
-  color: var(--ink);
-  background: transparent;
-  border: 1px solid var(--accent);
-  border-radius: 999px;
-  padding: 0.1rem 0.8rem;
-  cursor: pointer;
-  white-space: nowrap;
-}
-.theme-toggle:hover { background: var(--accent); color: var(--on-accent); }
-.theme-toggle[hidden] { display: none; }
 
 /* ヒーロー（大見出し＋太いアクセント帯＋マスコット） */
 .hero {
@@ -232,13 +176,6 @@ a:hover { color: var(--accent-dark); }
   gap: clamp(0.75rem, 3vw, 1.75rem);
 }
 .brand-mascot { width: clamp(64px, 11vw, 110px); height: auto; flex: none; }
-
-/* マスコット：ダークでも読めるよう台座を敷く */
-.hero-mascot, .brand-mascot {
-  background: var(--plate);
-  border-radius: 14px;
-  padding: 6px;
-}
 
 /* セクション */
 .section { padding: clamp(1.75rem, 4vw, 3rem) 0; }
