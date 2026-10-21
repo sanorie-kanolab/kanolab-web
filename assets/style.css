@@ -434,3 +434,10 @@ dl.facts dd { margin: 0; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* Alumni table */
+.table-wrap { overflow-x: auto; margin: 0 0 1rem; }
+table.alumni { border-collapse: collapse; width: 100%; max-width: 52rem; font-size: .95rem; }
+table.alumni caption { position: absolute; left: -9999px; }
+table.alumni th, table.alumni td { text-align: left; padding: .45rem .7rem; border-bottom: 1px solid var(--line, #ddd); vertical-align: top; }
+table.alumni th { font-weight: 700; border-bottom-width: 2px; }
